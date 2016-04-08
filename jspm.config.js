@@ -33,6 +33,7 @@ SystemJS.config({
     "process": "github:jspm/nodelibs-process@0.2.0-alpha",
     "punycode": "github:jspm/nodelibs-punycode@0.2.0-alpha",
     "querystring": "github:jspm/nodelibs-querystring@0.2.0-alpha",
+    "redux": "npm:redux@3.3.1",
     "riot": "npm:riot@2.3.18",
     "stream": "github:jspm/nodelibs-stream@0.2.0-alpha",
     "string_decoder": "github:jspm/nodelibs-string_decoder@0.2.0-alpha",
@@ -524,6 +525,11 @@ SystemJS.config({
         "lodash.tostring": "npm:lodash.tostring@4.1.2"
       }
     },
+    "npm:loose-envify@1.1.0": {
+      "map": {
+        "js-tokens": "npm:js-tokens@1.0.3"
+      }
+    },
     "npm:lru-cache@4.0.1": {
       "map": {
         "pseudomap": "npm:pseudomap@1.0.2",
@@ -693,6 +699,13 @@ SystemJS.config({
         "graceful-fs": "npm:graceful-fs@4.1.3",
         "minimatch": "npm:minimatch@2.0.10",
         "readable-stream": "npm:readable-stream@2.0.6"
+      }
+    },
+    "npm:redux@3.3.1": {
+      "map": {
+        "lodash": "npm:lodash@4.9.0",
+        "lodash-es": "npm:lodash-es@4.9.0",
+        "loose-envify": "npm:loose-envify@1.1.0"
       }
     },
     "npm:regex-cache@0.4.3": {

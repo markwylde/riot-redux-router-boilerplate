@@ -1,12 +1,26 @@
 import riot from 'riot'
 
+import store from './store/main.store.js'
+
 import './css/main.css!'
 import './tags/app.tag!'
 
-const body = document.createElement('body')
-const app = document.createElement('app')
-body.appendChild(app)
+function initDocument() {
+	const body = document.createElement('body')
+	const app = document.createElement('app')
+	body.appendChild(app)
+	document.body = body
+}
 
-document.body = body
-            
-riot.mount('*')
+function updateTags() {
+	tags.forEach(tag => {
+		tag.update({ store: store.getState() })
+	})
+}
+
+initDocument()
+
+const tags = riot.mount('*')
+updateTags()
+
+store.subscribe(updateTags)
