@@ -1,4 +1,5 @@
 SystemJS.config({
+  transpiler: 'plugin-babel',
   packages: {}
 });
 
@@ -12,6 +13,7 @@ SystemJS.config({
     "assert": "github:jspm/nodelibs-assert@0.2.0-alpha",
     "buffer": "github:jspm/nodelibs-buffer@0.2.0-alpha",
     "child_process": "github:jspm/nodelibs-child_process@0.2.0-alpha",
+    "clean-css": "npm:clean-css@3.4.11",
     "cluster": "github:jspm/nodelibs-cluster@0.2.0-alpha",
     "constants": "github:jspm/nodelibs-constants@0.2.0-alpha",
     "crypto": "github:jspm/nodelibs-crypto@0.2.0-alpha",
@@ -30,6 +32,7 @@ SystemJS.config({
     "net": "github:jspm/nodelibs-net@0.2.0-alpha",
     "os": "github:jspm/nodelibs-os@0.2.0-alpha",
     "path": "github:jspm/nodelibs-path@0.2.0-alpha",
+    "plugin-babel": "npm:systemjs-plugin-babel@0.0.9",
     "process": "github:jspm/nodelibs-process@0.2.0-alpha",
     "punycode": "github:jspm/nodelibs-punycode@0.2.0-alpha",
     "querystring": "github:jspm/nodelibs-querystring@0.2.0-alpha",
@@ -234,9 +237,20 @@ SystemJS.config({
         "inherits": "npm:inherits@2.0.1"
       }
     },
+    "npm:clean-css@3.4.11": {
+      "map": {
+        "commander": "npm:commander@2.8.1",
+        "source-map": "npm:source-map@0.4.4"
+      }
+    },
     "npm:combined-stream@1.0.5": {
       "map": {
         "delayed-stream": "npm:delayed-stream@1.0.0"
+      }
+    },
+    "npm:commander@2.8.1": {
+      "map": {
+        "graceful-readlink": "npm:graceful-readlink@1.0.1"
       }
     },
     "npm:commander@2.9.0": {
@@ -794,6 +808,11 @@ SystemJS.config({
       }
     },
     "npm:source-map@0.1.32": {
+      "map": {
+        "amdefine": "npm:amdefine@1.0.0"
+      }
+    },
+    "npm:source-map@0.4.4": {
       "map": {
         "amdefine": "npm:amdefine@1.0.0"
       }
