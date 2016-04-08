@@ -3,7 +3,8 @@ import riot from 'riot'
 import './tags/app.tag!'
 
 const body = document.createElement('body')
-body.innerHTML = '<app></app>'
+const app = document.createElement('app')
+body.appendChild(app)
 
 document.body = body
             
