@@ -1,5 +1,6 @@
 import riot from 'riot'
 
+import './css/main.css!'
 import './tags/app.tag!'
 
 const body = document.createElement('body')

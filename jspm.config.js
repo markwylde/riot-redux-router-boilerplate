@@ -15,6 +15,7 @@ SystemJS.config({
     "cluster": "github:jspm/nodelibs-cluster@0.2.0-alpha",
     "constants": "github:jspm/nodelibs-constants@0.2.0-alpha",
     "crypto": "github:jspm/nodelibs-crypto@0.2.0-alpha",
+    "css": "github:systemjs/plugin-css@0.1.20",
     "dgram": "github:jspm/nodelibs-dgram@0.2.0-alpha",
     "dns": "github:jspm/nodelibs-dns@0.2.0-alpha",
     "ecc-jsbn": "npm:ecc-jsbn@0.1.1",
