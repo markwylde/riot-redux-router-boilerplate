@@ -11,7 +11,7 @@
       "plugin-babel": "npm:systemjs-plugin-babel@^0.0.9",
       "redux": "npm:redux@^3.3.1",
       "riot": "npm:riot@^2.3.18",
-      "tag": "github:markwylde/jspm-riot@master",
+      "tag": "github:markwylde/jspm-riot@next",
       "traceur": "github:jmcriffey/bower-traceur@^0.0.105"
     },
     "devDependencies": {
