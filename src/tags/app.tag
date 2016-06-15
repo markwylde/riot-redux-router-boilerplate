@@ -14,11 +14,13 @@ import './ticker.tag!'
   <router store={store}>
 
     <route path="/">
-      <h1>Welcome to the Example</h1>
-      <p>
-        You can use <button onClick="window.location.route = '/page/2'">window.location.route = '/page/2'</button> 
-        to change the route via javascript
-      </p>
+      <article>
+        <h1>Welcome to the Example</h1>
+        <p>
+          You can use <button onClick="window.location.route = '/page/2'">window.location.route = '/page/2'</button> 
+          to change the route via javascript
+        </p>
+      </article>
     </route>
 
     <route path="/ticker" store={opts.store}>
@@ -26,28 +28,38 @@ import './ticker.tag!'
     </route>
 
     <route path="/page/1">
-      <h1>Page: 1</h1>
-      This is page 1
+      <article>
+        <h1>Page: 1</h1>
+        This is page 1
+      </article>
     </route>
 
     <route path="/page/2">
-      <h1>Page: 2</h1>
-      This is page 2
+      <article>
+        <h1>Page: 2</h1>
+        This is page 2
+      </article>
     </route>
 
     <route path="/say">
-      <h1>Say Something...</h1>
-      You didn't choose anything to say
+      <article>
+        <h1>Say Something...</h1>
+        You didn't choose anything to say
+      </article>
     </route>
 
     <route path="/say/:message">
-      <h1>Say?</h1>
-      {route.message}
+      <article>
+        <h1>Say?</h1>
+        {route.message}
+      </article>
     </route>
 
     <route path="/say/:message/to/:user">
-      <h1>Say?</h1>
-      {route.message} to {route.user}
+      <article>
+        <h1>Say?</h1>
+        {route.message} to {route.user}
+      </article>
     </route>
 
   </router>
