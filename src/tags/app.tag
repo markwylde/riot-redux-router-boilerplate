@@ -11,8 +11,6 @@ import './ticker.tag!'
   <a href="/page/1">Page 1</a> | 
   <a href="/page/2">Page 2</a>
 
-
-
   <router store={store}>
 
     <route path="/">
@@ -54,9 +52,4 @@ import './ticker.tag!'
 
   </router>
 
-  <script>
-    this.on('update', function() {
-      this.store = this.store
-    })
-  </script>
 </app>
