@@ -10,8 +10,9 @@
       "css": "github:systemjs/plugin-css@^0.1.20",
       "plugin-babel": "npm:systemjs-plugin-babel@^0.0.9",
       "redux": "npm:redux@^3.3.1",
-      "riot": "npm:riot@^2.3.18",
-      "tag": "github:markwylde/jspm-riot@master",
+      "riot": "npm:riot@3.0.0-alpha.4",
+      "riot-router-tag": "npm:riot-router-tag@^1.0.0",
+      "tag": "npm:jspm-riot@2.0.0",
       "traceur": "github:jmcriffey/bower-traceur@^0.0.105"
     },
     "devDependencies": {
@@ -45,7 +46,7 @@
       "string_decoder": "github:jspm/nodelibs-string_decoder@^0.2.0-alpha",
       "tls": "github:jspm/nodelibs-tls@^0.2.0-alpha",
       "tty": "github:jspm/nodelibs-tty@^0.2.0-alpha",
-      "tweetnacl": "npm:tweetnacl@0",
+      "tweetnacl": "npm:tweetnacl@0.13",
       "url": "github:jspm/nodelibs-url@^0.2.0-alpha",
       "util": "github:jspm/nodelibs-util@^0.2.0-alpha",
       "vm": "github:jspm/nodelibs-vm@^0.2.0-alpha",
@@ -61,12 +62,30 @@
           "_stream_transform": "readable-stream/transform"
         }
       },
+      "npm:debug@2.2.0": {
+        "main": "browser.js",
+        "jspmNodeConversion": false,
+        "format": "cjs",
+        "map": {
+          "./browser.js": {
+            "node": "./node.js"
+          },
+          "fs": "@node/fs",
+          "net": "@node/net",
+          "tty": "@node/tty",
+          "util": "@node/util"
+        }
+      },
       "npm:inherits@2.0.1": {
         "ignore": [
           "test.js"
         ]
       },
-      "npm:readable-stream@1.1.13": {
+      "npm:ms@0.7.1": {
+        "jspmNodeConversion": false,
+        "format": "cjs"
+      },
+      "npm:readable-stream@1.1.14": {
         "map": {
           "stream": "stream-browserify/index"
         },

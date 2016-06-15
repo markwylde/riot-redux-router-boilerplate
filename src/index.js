@@ -13,8 +13,9 @@ function initDocument() {
 }
 
 function updateTags() {
+  const state = store.getState()
 	tags.forEach(tag => {
-		tag.update({ store: store.getState() })
+		tag.update({ store: state })
 	})
 }
 
