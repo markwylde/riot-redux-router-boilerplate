@@ -1,22 +1,20 @@
 {
-  "scripts": {
-    "postinstall": "jspm install",
-    "prebuild": "rm -rf dist",
-    "build": "jspm build --minify src/index.js dist/index.js",
-    "postbuild": "echo \"<!doctype html><script src=\"index.js\"></script>\" > dist/index.html"
-  },
+  "name": "riot-redux-router-boilerplate",
+  "version": "1.0.1",
+  "description": "This is a boilerplate that uses:",
+  "main": "index.js",
   "jspm": {
+    "name": "riot-redux-router-boilerplate",
+    "main": "riot-redux-router-boilerplate.js",
     "dependencies": {
-      "css": "github:systemjs/plugin-css@^0.1.20",
-      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.9",
-      "redux": "npm:redux@^3.3.1",
-      "riot": "npm:riot@3.0.0-alpha.4",
-      "riot-router-tag": "npm:riot-router-tag@^1.0.0",
-      "tag": "npm:jspm-riot@2.0.0",
-      "traceur": "github:jmcriffey/bower-traceur@^0.0.105"
+      "css": "github:systemjs/plugin-css@^0.1.26",
+      "redux": "npm:redux@^3.5.2",
+      "riot": "npm:riot@3.0.0-alpha.5",
+      "riot-router-tag": "npm:riot-router-tag@^1.0.2",
+      "tag": "npm:jspm-riot@2.0.0"
     },
     "devDependencies": {
-      "clean-css": "npm:clean-css@^3.4.11"
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.13"
     },
     "peerDependencies": {
       "assert": "github:jspm/nodelibs-assert@^0.2.0-alpha",
@@ -27,7 +25,7 @@
       "crypto": "github:jspm/nodelibs-crypto@^0.2.0-alpha",
       "dgram": "github:jspm/nodelibs-dgram@^0.2.0-alpha",
       "dns": "github:jspm/nodelibs-dns@^0.2.0-alpha",
-      "ecc-jsbn": "npm:ecc-jsbn@0",
+      "ecc-jsbn": "npm:ecc-jsbn@~0.1.1",
       "events": "github:jspm/nodelibs-events@^0.2.0-alpha",
       "fs": "github:jspm/nodelibs-fs@^0.2.0-alpha",
       "fsevents": "npm:fsevents@^1.0.0",
@@ -81,6 +79,12 @@
           "test.js"
         ]
       },
+      "npm:lodash@4.15.0": {
+        "map": {
+          "buffer": "@empty",
+          "process": "@empty"
+        }
+      },
       "npm:ms@0.7.1": {
         "jspmNodeConversion": false,
         "format": "cjs"
@@ -102,7 +106,17 @@
       }
     }
   },
-  "dependencies": {
-    "jspm": "^0.17.0-beta.12"
-  }
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markwylde/riot-redux-router-boilerplate.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markwylde/riot-redux-router-boilerplate/issues"
+  },
+  "homepage": "https://github.com/markwylde/riot-redux-router-boilerplate#readme"
 }

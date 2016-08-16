@@ -2,8 +2,8 @@ import riot from 'riot'
 
 import store from './store/main.store.js'
 
-import './css/main.css!'
-import './tags/app.tag!'
+import './css/main.css'
+import './app.html'
 
 function initDocument() {
 	const body = document.createElement('body')
