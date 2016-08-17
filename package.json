@@ -3,6 +3,12 @@
   "version": "1.0.1",
   "description": "This is a boilerplate that uses:",
   "main": "index.js",
+  "scripts": {
+    "postinstall": "jspm install",
+    "prebuild": "rm -rf dist",
+    "build": "jspm build src/index.js dist/index.js",
+    "postbuild": "echo \"<!doctype html><base href=\"/\"><script src=\"index.js\"></script>\" > dist/index.html"
+  },
   "jspm": {
     "name": "riot-redux-router-boilerplate",
     "main": "riot-redux-router-boilerplate.js",
@@ -105,9 +111,6 @@
         }
       }
     }
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

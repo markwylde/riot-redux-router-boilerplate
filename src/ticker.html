@@ -3,6 +3,7 @@ import store from './store/main.store.js'
 import { increaseCounter, decreaseCounter } from './store/actions/counter.js'
 
 <ticker>
+
   <article>
     <header>
       <h1>Example App</h1>
@@ -16,6 +17,10 @@ import { increaseCounter, decreaseCounter } from './store/actions/counter.js'
     </article>
   </article>
 
-  this.increase = () => store.dispatch(increaseCounter())
-  this.decrease = () => store.dispatch(decreaseCounter())
+  this.increase = () =>
+    store.dispatch(increaseCounter())
+
+  this.decrease = () =>
+    store.dispatch(decreaseCounter())
+
 </ticker>

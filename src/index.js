@@ -1,3 +1,5 @@
+'use strict'
+
 import riot from 'riot'
 
 import store from './store/main.store.js'
