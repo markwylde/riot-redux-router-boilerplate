@@ -1,5 +1,7 @@
 import store from './store/main.store.js'
 
+import { increaseCounter, decreaseCounter } from './store/actions/counter.js'
+
 <ticker>
   <article>
     <header>
@@ -8,17 +10,12 @@ import store from './store/main.store.js'
 
     <article>
       <p>This is an example</p>
-      <p>Value: {opts.store}</p>
+      <p>Value: {opts.store.counter}</p>
       <button onClick={increase}>+</button>
       <button onClick={decrease}>-</button>
     </article>
   </article>
 
-  <script>
-    this.increase = () =>
-      store.dispatch({ type: 'INCREMENT' })
-
-    this.decrease = () =>
-      store.dispatch({ type: 'DECREMENT' })
-  </script>
+  this.increase = () => store.dispatch(increaseCounter())
+  this.decrease = () => store.dispatch(decreaseCounter())
 </ticker>
